@@ -1,5 +1,12 @@
 ﻿//Напишите программу, которая перевернёт одномерный массив 
 //(последний элемент будет на первом месте, а первый - на последнем и т.д.)
+
+
+
+
+
+
+
 Console.Clear();
 
 int[] array = GetArray(10, 0, 10);
@@ -23,8 +30,7 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-void ReversArray1(int[] inArray)
-{
+void ReversArray1(int[] inArray){
     for (int i = 0; i < inArray.Length / 2; i++)
     {
         int k = inArray[i];

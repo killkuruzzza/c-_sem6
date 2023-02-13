@@ -5,7 +5,7 @@
 Console.Clear();
 int number = int.Parse(Console.ReadLine());
 
-string res = DecToNum(number, 2);
+string res = DecToNum(number, 16);
 
 Console.WriteLine($"{number}->{res}");
 
@@ -23,6 +23,8 @@ string DecToNum(int decNumber, int otherSystem)
     }
     return res;
 }
+/*Задача 45: Напишите программу,
+ которая будет создавать копию заданного массива с помощью поэлементного копирования.*/
 
 // Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи.
 //  Первые два числа Фибоначчи: 0 и 1.
