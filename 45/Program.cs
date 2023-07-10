@@ -5,10 +5,9 @@ Console.Clear();
 int[] array = GetArray(10, 0, 10);
 Console.WriteLine(String.Join(" ", array));
 
-//int[] copyArray = CopyArray(array);
-Console.WriteLine(String.Join(" ", CopyArray(array)));
+int[] copyArray = CopyArray(array);
+Console.WriteLine(String.Join(" ", CopyArray(copyArray)));
 
-cvbbcvbc
 int[] GetArray(int size, int minValue, int maxValue)
 {
     int[] res = new int[size];

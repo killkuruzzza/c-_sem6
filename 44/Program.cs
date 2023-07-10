@@ -1,19 +1,21 @@
 ﻿
-int[] Fib(int n){
-    int[] mas_f = new int[n];
+ulong[] Fib(int n){
+    ulong[] mas_f = new ulong[n];
     mas_f[0] = 0;
-    if(n >= 2){
+    if(n >= 2)
         mas_f[1] = 1;
-    }else { return mas_f; }
     for (int i = 2; i < n; i++){
         mas_f[i] = mas_f[i - 1] + mas_f[i - 2];
     }
     return mas_f;
 }
+
 Console.Clear();
 Console.WriteLine("введите N");
 int n = int.Parse(Console.ReadLine());
 Console.WriteLine($"[{String.Join(' ', Fib(n))}]");
+/*Задача 45: Напишите программу,
+ которая будет создавать копию заданного массива с помощью поэлементного копирования.*/
 /***Задача 1:** Пользователь вводит с клавиатуры M чисел. 
 Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
